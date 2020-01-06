@@ -19,6 +19,7 @@ class App extends React.Component {
   };
 
   validate = loginFields => {
+    console.log("Users", users);
     let usr = this.state.users.filter(user => {
       return user.username === loginFields.username;
     });
